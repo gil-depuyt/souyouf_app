@@ -38409,12 +38409,11 @@ if(o!=null)p.ae(new A.al5(p,o))
 else{s=1
 break}case 1:return A.G(q,r)}})
 return A.H($async$wt,r)},
-WL(a){var s,r
-if(a==="Homme")return A.b(["MMA","JJB","Boxe Anglaise","Kickboxing","Full Access"],t.s)
-else{s=a==="Femme"||a==="Kids"
-r=t.s
-if(s)return A.b(["Boxe Anglaise","JJB","Full Access"],r)
-else return A.b([],r)}},
+WL(a){var s
+if(a==="Homme")return A.b(["MMA","JJB","Boxe Anglaise","Kickboxing","Full"],t.s)
+else{s=t.s
+if(a==="Femme")return A.b(["JJB Groupe Semaine","JJB Groupe Dimanche","Boxe Groupe Semaine","Boxe Groupe Dimanche","Remise en Forme"],s)
+else return A.b(["MMA","JJB Groupe -6","JJB Groupe 6-10","JJB Groupe 10+","Boxe"],s)}},
 u_(a){return this.akX(a)},
 akX(a4){var s=0,r=A.I(t.Vd),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3
 var $async$u_=A.E(function(a5,a6){if(a5===1)return A.F(a6,r)
