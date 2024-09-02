@@ -38588,7 +38588,7 @@ $1(a){var s,r,q,p,o=null,n="registrationDate",m=this.a,l=B.b.yI(m.f,new A.al6(a)
 if(k==null)k=!1
 s=m.aln(l.h(0,n)!=null?A.ax4(t.y4.a(l.h(0,n)).gUD()):o)
 if(k)r="Inscrit \xe0 "+a
-else if(a==="Full Access"){q=m.d
+else if(a==="Full"){q=m.d
 q=q==null?o:q.f
 p="S'inscrire \xe0 "+a
 q=q==="Homme"?p+", \u20ac65/mois":p
