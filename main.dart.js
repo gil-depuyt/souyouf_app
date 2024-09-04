@@ -38430,7 +38430,7 @@ WP(a,b){var s
 if(a==="Homme"&&b>13)return A.b(["MMA","JJB","Boxe Anglaise","Kickboxing","Full"],t.s)
 else{s=t.s
 if(a==="Femme")return A.b(["JJB Groupe Semaine","JJB Groupe Dimanche","Boxe Groupe Semaine","Boxe Groupe Dimanche","Remise en Forme"],s)
-else return A.b(["MMA","JJB Groupe -6","JJB Groupe 6-10","JJB Groupe 10+","Boxe"],s)}},
+else return A.b(["MMA","JJB Groupe -8","JJB Groupe 8+","Boxe"],s)}},
 u0(a){return this.al1(a)},
 al1(a5){var s=0,r=A.I(t.Vd),q,p=this,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4
 var $async$u0=A.E(function(a6,a7){if(a6===1)return A.F(a7,r)
@@ -38548,7 +38548,7 @@ s=g.giq().length!==0?9:10
 break
 case 9:f=!b
 n=B.b.gX(g.giq()).gAk()
-l=A.aNa(A.aB(["isSelected",f,"registrationDate",null,"pay\xe9",!1],t.K,t.X))
+l=A.aNa(A.aB(["isSelected",f,"registrationDate",null],t.K,t.X))
 l.toString
 s=11
 return A.J(n.a.bz(l),$async$qn)
@@ -38610,7 +38610,6 @@ $1(a){var s,r="registration"
 if(J.c(a.h(0,"name"),this.a)){s=A.kD(a,t.N,t.z)
 s.n(0,"isSelected",this.b)
 s.n(0,r,a.h(0,r))
-s.n(0,"pay\xe9",!1)
 return s}return a},
 $S:276}
 A.ald.prototype={
@@ -38841,7 +38840,7 @@ e=n.at
 if(e==="Homme"&&f>13)n.ay=A.b(["MMA","JJB","Boxe Anglaise","Kickboxing","Full"],t.s)
 else{h=t.s
 if(e==="Femme")n.ay=A.b(["JJB Groupe Semaine","JJB Groupe Dimanche","Boxe Groupe Semaine","Boxe Groupe Dimanche","Remise en Forme"],h)
-else n.ay=A.b(["MMA","JJB Groupe -6","JJB Groupe 6-10","JJB Groupe 10+","Boxe"],h)}d=f<13?"Kids":e
+else n.ay=A.b(["MMA","JJB Groupe -8","JJB Groupe 8+","Boxe"],h)}d=f<13?"Kids":e
 h=n.e.a.a
 c=n.f.a.a
 b=n.r.a.a
@@ -38862,19 +38861,17 @@ h=t.N
 c=t.z
 s=8
 return A.J(l.J0(A.aB(["uid",a7.a.c.a.a,"firstname",m.c,"lastname",m.b,"dateOfBirth",m.d,"registerNumber",m.e,"gender",m.f,"adress",m.r,"mail",m.w,"password",m.x,"telNumber",m.y,"telNumberEmergency",m.z],h,c)),$async$p0)
-case 8:b=n.ay
-b.toString
-a4=0
-case 9:if(!(a4<5)){s=11
+case 8:b=n.ay,a=b.length,a4=0
+case 9:if(!(a4<b.length)){s=11
 break}k=b[a4]
-a=l
-a0=a.b
-a=a.a
-a=new A.iR(a0,a.a.hF(B.b.aI(a.b.a,"/")+"/disciplines"))
-A.br(a.ge8(),$.k_(),!0)
+a0=l
+a1=a0.b
+a0=a0.a
+a0=new A.iR(a1,a0.a.hF(B.b.aI(a0.b.a,"/")+"/disciplines"))
+A.br(a0.ge8(),$.k_(),!0)
 s=12
-return A.J(a.E(0,A.aB(["name",k,"isSelected",!1],h,c)),$async$p0)
-case 12:case 10:++a4
+return A.J(a0.E(0,A.aB(["name",k,"isSelected",!1,"commentaire","","pay\xe9",!1],h,c)),$async$p0)
+case 12:case 10:b.length===a||(0,A.N)(b),++a4
 s=9
 break
 case 11:p=2
